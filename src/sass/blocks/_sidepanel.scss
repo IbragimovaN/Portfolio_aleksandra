@@ -20,4 +20,11 @@
         
         
     }
+    &__link{
+        &:hover{
+            svg path{
+                fill: $main-color;
+            }
+        }
+    }
 }
