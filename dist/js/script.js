@@ -7,4 +7,12 @@ hamburger.addEventListener('click', () => {
 });
 menuClose.addEventListener('click', () => {
     menu.classList.remove('active')
+});
+
+const counters = document.querySelectorAll('.skills__ratings-counter');
+const lines = document.querySelectorAll('.skills__ratings-line span');
+
+counters.forEach(function(item, index){
+    lines[index].style.width = item.innerHTML;
+    
 })

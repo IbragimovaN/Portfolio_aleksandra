@@ -21,6 +21,10 @@
         position: relative;
         z-index: 3;
         @include yellow_circle;
+        &::before{
+            top: -25%;
+            left: 0;
+        }
     }
     &__header{
         margin: 0;

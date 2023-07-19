@@ -27,6 +27,7 @@
         &-header{
             padding-left: 35px;
             position: relative;
+            margin: 0;
             &::before{
                 content: '';
                 position: absolute;
@@ -35,7 +36,7 @@
                 width: 15px;
                 border-radius: 50%;
                 background-color: $main-color;
-                left: 0;
+                left: -7px;
                 top: 50%;
                 transform: translateY(-50%);
                 
@@ -44,16 +45,69 @@
         ul{
             list-style-type: none;
             li{
+                margin: 0;
+                padding-left: 42px;
                 position: relative;
                 &::after{
                     position: absolute;
                     content: '';
                     width: 1px;
-                    height: 100%;
+                    height: calc(100% + 4px);
                     background-color: black;
                     left: 0;
+                    top: -8px;
                 }
             }
+        }
+    }
+    &__item{
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 60px;
+            left: -41px;
+            content: '';
+            width: 42px;
+            height: 1px;
+            background-color: black;
+        }
+        &-head{
+            margin:0;
+            margin-bottom: 11.7px;
+            position: relative;
+            padding-top: 43px;
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 16px;
+            @include yellow_circle;
+            &::before{
+                top: 43px;
+                left: 0;
+            }
+        }
+        &-header{
+            grid-column-start: 2;
+            margin: 0;
+        }
+        &-subheader{
+            grid-column-start: 2;
+            font-size: 12px;
+            line-height: 17.5px;
+            font-weight: 500;
+        }
+        &-icon{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            align-self: end;
+            justify-self: end;
+            z-index: 3;
+        }
+        &-body{
+            margin-top: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 0;
         }
     }
     

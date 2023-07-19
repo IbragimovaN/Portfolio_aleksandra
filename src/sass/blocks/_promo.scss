@@ -17,6 +17,10 @@
         padding-left: 10px;
         position: relative;
         @include yellow_circle;
+        &::before{
+            top: -25%;
+            left: 0;
+        }
         z-index: 3;
 
         
