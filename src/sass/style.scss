@@ -8,9 +8,12 @@
     margin: 0;
     padding: 0;
 }
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
 
 .container{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .divider{
@@ -25,4 +28,8 @@
 @import 'blocks/menu';
 @import 'blocks/aboutMe';
 @import 'blocks/experience';
-@import 'blocks/skills'
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/price';
+@import 'blocks/contacts';
+@import 'blocks/media';

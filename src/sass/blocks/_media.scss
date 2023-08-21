@@ -1,0 +1,381 @@
+@media(max-width:1380px){
+    .sidepanel{
+        display: none;
+    }
+}
+@media (max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .aboutMe{
+        &__wrapper{
+            grid-column-gap: 50px;
+            grid-template-columns: 400px 520px;
+            
+        }
+        &__skills{
+            grid-column-gap: 20px;
+            grid-template: repeat(2, 116px)/repeat(2, 1fr);
+        }
+        &__item{
+            grid-template-columns: 40px 185px;
+        }
+    } 
+    .experience{
+        &__wrapper{
+            column-gap: 120px;
+            grid-template-columns: repeat(2, 400px);
+            padding: 60px 40px 0 40px;
+        }
+    }
+    .skills{
+        &__items{
+            grid-template: repeat(auto-fit, 270px)/ repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+        &__ratings{
+            grid-template: repeat(auto-fit, minmax(70px, auto) )/ repeat(auto-fit, 320px);
+            justify-content: space-around;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 35px;
+        }
+        &__item {
+                grid-row: unset;
+                grid-column: unset;
+        }
+        
+    } 
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }  
+    
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 720px;
+    }
+    .title{
+        &_fz36{
+            font-size: 30px;
+        }
+        &_fz20{
+            font-size: 18px;
+        }
+        &_fz14{
+            font-size: 13px;
+        }
+    }
+    .promo{
+        background-position-x: 55%;
+    }
+    .aboutMe{
+        padding-top: 60px;
+        &__wrapper{
+            grid-column-gap: 30px;
+            grid-template: 250px 250px/300px 390px;
+            
+        }
+        &__skills{
+            grid-column: 2/3;
+            grid-row-gap: 10px;
+            grid-template: repeat(3, 1fr)/ 390px;
+            grid-auto-rows: auto;
+        }
+        &__item{
+            grid-template-columns: 40px 1fr;
+        }
+        &__photo{
+            grid-row: 1/3;
+        }
+        &__text{
+            font-size: 13px;
+        }
+        &__item-text{
+            font-size: 11px;
+        }
+    }
+    .experience{
+        padding-top: 46px;
+        &__wrapper{
+            column-gap: 70px;
+            grid-template-columns: repeat(2, 290px);
+            padding: 0px 40px 0 40px;
+        }
+    }
+    .skills{
+        padding-top: 46px;
+        &__items{
+            justify-content: space-around;
+        }
+        
+        &__ratings{
+            margin-top: 45px;
+            justify-content: center;
+            &-line {
+                width: 100%;
+            }
+
+        }
+        
+    }
+    .portfolio{
+        padding-top: 48px;
+
+    }
+    .price {
+        padding: 46px 0 0 0;
+        &__wrapper {
+            margin-top: 20px;
+            grid-template-columns: 1fr;
+            grid-column-gap: 40px;
+            padding: 0;
+            justify-content: center;
+        }
+        
+    }
+    .contacts {
+        padding-top: 40px;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+            
+        }
+       
+    }
+          
+    
+}
+@media(min-width:769px) and (max-width:992px){
+    .skills{
+        &__item{
+            &:last-child{
+                grid-column: 1/3;
+                width: 270px;
+                justify-self: center;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        max-width: 540px;
+    }
+    
+    .promo{
+        background-position-x: 58%;
+        &__header{
+            width: 300px;
+            font-size: 28px;
+            line-height: 39px;
+        }
+    }
+    .aboutMe{
+        padding-top: 40px;
+        &__wrapper{
+            grid-template: 340px auto auto / 1fr 1fr;
+            justify-content: center;
+            grid-column-gap: 0;
+            
+        }
+        &__photo{
+            grid-row: 1/2;
+            grid-column: 1/3;
+            
+            
+        }
+        &__info{
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+        &__skills{
+            grid-row: 3/4;
+            grid-column: 1/3;
+            grid-template: repeat(2, 116px)/repeat(2, 1fr);
+        }
+        
+    }
+    .experience{
+        .divider{
+            margin: 15px auto 0 auto;
+        }
+        &__wrapper{
+            column-gap: 120px;
+            grid-template-columns: 400px;
+            padding: 40px 40px 0 40px;
+        }
+    }
+    .skills{
+        .divider{
+            margin: 15px auto 0 auto;
+        }
+        &__items{
+            grid-template: repeat(auto-fit, 250px)/ repeat(auto-fit, 250px);
+            justify-content: space-between;
+        }
+        
+        &__ratings{
+            grid-template-columns: 1fr;
+        }
+    }
+        
+    .portfolio{
+        .divider{
+            margin: 15px auto 0 auto;
+        }
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 250px);
+        }
+    }
+    .price{
+        .divider{
+            margin: 15px auto 0 auto;
+        }
+    }
+
+}
+@media(min-width:577px) and (max-width:768px){
+    .skills{
+        &__item{
+            &:last-child{
+                grid-column: 1/3;
+                width: 250px;
+                justify-self: center;
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title{
+        &_fz36{
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .promo{
+        background-position-x: 60%;
+        
+        &__header{
+            font-size: 27px;
+            margin: 0;
+           
+            
+        }
+        &__btns{
+            margin-top: 32px;
+        }
+    }
+    .hamburger{
+        right: 20px;
+    }
+    .menu{
+        &__block{
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .aboutMe{
+        &__wrapper{
+            grid-row-gap: 20px;
+            
+        }
+        &__skills{
+            grid-template: repeat(2, 116px)/1fr;
+            grid-row-gap: 20px;
+            
+            
+        }
+        &__item{
+            grid-template-columns: 40px 202px;
+            gap: 18px;
+        }
+        &__photo{
+            margin-bottom: 26px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__item-text{
+            font-size: 12px;
+        }
+    }
+    .skills{
+        &__items{
+            grid-template: 270px/270px;
+            justify-content: center;
+        }
+    }
+    .experience{
+        &__wrapper{
+            justify-content: center;
+            grid-template-columns: 290px;
+            padding: 40px 5px 0 5px;
+            row-gap: 40px;
+        }
+    }
+
+    .portfolio{
+        &__wrapper{
+            grid-template: 280px/280px;
+            justify-content: center;
+        }
+    }
+    
+    .price{
+        &__item{
+            grid-template: 21px minmax(18px, auto)/195px 1fr;
+        }
+       
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__content{
+            justify-self: left;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
+        }
+    }
+
+    
+}
